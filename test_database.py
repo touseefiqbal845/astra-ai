@@ -30,7 +30,7 @@ SessionLocal = sessionmaker(bind=engine)
 session = SessionLocal()
 
 # MongoDB Setup
-MONGO_URI = "mongodb://localhost:27017/python"
+MONGO_URI = "mongodb+srv://astrauser:AstraProtocol@astra.biuun.mongodb.net/astra_protocol/ai"
 client = MongoClient(MONGO_URI)
 db = client["face_recognition"]
 face_embeddings_collection = db["face_embeddings"]
